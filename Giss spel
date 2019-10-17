@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int guessedcount = 1;
+    	Random rnd = new Random();
+		int card  =  rnd.Next(101);
+		while(true)
+		{
+		Console.WriteLine("gissa");
+		string strNr = Console.ReadLine();
+		int tal = int.Parse(strNr);
+		if ( card >  tal)
+		Console.WriteLine("Din tal är mindre");	
+		else if( card < tal)
+		Console.WriteLine(" Din tal är större ");
+		else{
+		Console.WriteLine("du har rätt, Du har gissat {0} gånger", guessedcount); 
+	    break;
+		}
+			++guessedcount;
+	}
+  }
+}
