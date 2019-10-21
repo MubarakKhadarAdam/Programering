@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main() {
+	double radie=2.4; 	
+	Console.WriteLine("Cirkelns omkrets: " +CirkelOmkrets(radie));
+	Console.WriteLine("Cirkelns area: " +CirkelArea(radie));
+}   
+	
+	static double CirkelOmkrets(double r)  //Metod tar 2 parametrar
+	{
+		return (2 * r * 3.14);
+	}
+	
+	static double CirkelArea(double r)  //Metod tar 3 parametrar	
+	{
+	 return (r * 3.14 * r);
+	}	 
+}
