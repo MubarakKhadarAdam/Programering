@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Klasser
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person p = new Person();
+            p.setmodell("G29");
+            p.settillverkare("BMW");
+            p.setårsmodell(2018);
+            p.setvikt(1535);
+
+            Console.WriteLine(p.getmodell());
+            Console.WriteLine(p.gettillverkare());
+            Console.WriteLine(p.getårsmodell());
+            Console.WriteLine(p.getvikt());
+            Console.ReadLine();
+        }
+    }
+}
+
+
+Person delan
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Klasser
+{
+    class Person
+    {
+        private string modell;
+        private string tillverkare;
+        private int årsmodell;
+        private int vikt;
+
+        public void setmodell(string m) { modell = m; }
+        public string getmodell() { return modell;  }
+        public void settillverkare(string t) { tillverkare = t; }
+        public string gettillverkare() { return tillverkare; }
+        public void setårsmodell (int a) { årsmodell = a; }
+        public int getårsmodell() { return årsmodell; }
+        public void setvikt(int v) { vikt = v; }
+        public int getvikt() { return vikt; }
+
+
+
+
+
+    }
+
+}
